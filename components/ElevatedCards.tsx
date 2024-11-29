@@ -1,12 +1,11 @@
 import { View, Text , StyleSheet, ScrollView } from 'react-native'
-import React from 'react'
+import React from 'react';
 
 const ElevatedCards = () => {
   return (
     <View>
       <Text style = {styles.headingText}>Elevated Cards</Text>
       <ScrollView horizontal = {true} style={styles.container}>
-          
           <View style = {[styles.card , styles.cardElevated]}>
             <Text>
                 Tap
@@ -39,8 +38,8 @@ const ElevatedCards = () => {
 
       </ScrollView>
     </View>
-  )
-}
+  );
+};
 const styles = StyleSheet.create({
     headingText: {
       fontSize: 24,
@@ -49,7 +48,6 @@ const styles = StyleSheet.create({
     }, 
     container: {
         padding: 8,
-     
     },
     card: {
         flex: 1,
@@ -70,10 +68,10 @@ const styles = StyleSheet.create({
        },
        shadowColor: '#333',
        shadowOpacity:0.4,
-       shadowRadius: 2.0
+       shadowRadius: 2.0,
 
-    }
+    },
 
-})
+});
 
 export default ElevatedCards;
